@@ -6,7 +6,7 @@
  * Time: 16:11
  */
 
-namespace Vendor\Core;
+namespace Core;
 
 /**
  * Class Config

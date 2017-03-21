@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Vendor\Core;
+namespace Core;
 
 
 class Loader

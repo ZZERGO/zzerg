@@ -6,7 +6,7 @@
  * Time: 17:44
  */
 
-namespace Vendor\Core;
+namespace Core;
 
 
 class Db

@@ -6,7 +6,7 @@
  * Time: 17:46
  */
 
-namespace Vendor\Core;
+namespace Core;
 
 
 class Model

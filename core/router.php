@@ -6,7 +6,7 @@
  * Time: 22:36
  */
 
-namespace Vendor\Core;
+namespace Core;
 
 
 class Router

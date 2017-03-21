@@ -5,7 +5,6 @@ if (PHP_VERSION < 7){
     die();
 }
 
-
 // включаем отображение всех ошибок
 error_reporting (E_ALL);
 ini_set('display_errors', 1);
@@ -13,16 +12,16 @@ ini_set('display_errors', 1);
 
 // Подключаем автозагрузку и регистрируем в стеке
 try {
-    $loader = ROOT . DS. 'vendor' . DS . 'core' . DS . 'loader.php';
+    $loader = ROOT . DS. 'core' . DS . 'loader.php';
     if (!is_readable($loader)){
         throw new Exception('<b>Не найден файл</b><br>' . $loader . '<p><b>');
     }
     require_once $loader;
-    spl_autoload_register(['Vendor\Core\Loader', 'autoloader']);
+    spl_autoload_register(['Core\Loader', 'autoloader']);
 } catch (Exception $e) {
     echo '<p><b>Ошибка в файле:</b><br>' . $e->getFile() . '</p>';
     die($e->getMessage());
 }
 
 // Запускаем приложение
-\Vendor\Core\Router::Run();
+\Core\Router::Run();

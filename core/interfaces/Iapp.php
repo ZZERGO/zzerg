@@ -6,7 +6,7 @@
  * Time: 16:26
  */
 
-namespace Vendor\Core\Interfaces;
+namespace Core\Interfaces;
 
 
 interface App
