@@ -25,4 +25,4 @@ try {
 
 // Запускаем приложение
 \Core\Router::Run();
-echo __DIR__;
+
