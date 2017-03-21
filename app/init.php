@@ -23,5 +23,6 @@ try {
     die($e->getMessage());
 }
 
+echo __DIR__;
 // Запускаем приложение
 \Core\Router::Run();
